@@ -7,4 +7,5 @@ Achieved by implementing in C# using .NET Standard or Core
 # Resources
 
 https://otr.cypherpunks.ca/
+https://lists.cypherpunks.ca/pipermail/otr-dev/2019-January/002564.html
 
