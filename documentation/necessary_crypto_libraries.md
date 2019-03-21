@@ -9,3 +9,5 @@ hash:
 https://crypto.stackexchange.com/questions/44957/questions-about-sha-and-shake
 
 https://keccak.team/index.html
+
+available in https://github.com/bcgit/bc-csharp
