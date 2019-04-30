@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text;
 using FluentAssertions;
 using Org.BouncyCastle.Crypto.Digests;
 
@@ -17,17 +18,15 @@ namespace Shake256
             return DoFinal(output, outOff, outLen, partialByte, partialBits);
         }
 
-        public string Hash()
+        public string Hash(string input)
         {
-            int bits = 256; // v.Bits;
+            int bits = 256;
             int partialBits = bits % 8;
-            int outLen = 256 / 8; //expected.Length;
+            int outLen = bits / 8; // character is 8 bytes;
 
             byte[] output = new byte[outLen];
 
-            //byte[] m = new byte[] {1, 1, 0, 0, 1}; //= bin = 19 dec = 13 hex
-            //byte[] m = new byte[] { 0, 1, 0, 0, 0, 0, 1, 0 }; //= bin = 66 dec = 42 hex = B
-            byte[] m = new byte[] {Convert.ToByte('B')};
+            byte[] m = Encoding.ASCII.GetBytes(input);
 
             if (partialBits == 0)
             {

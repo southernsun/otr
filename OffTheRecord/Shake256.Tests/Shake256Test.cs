@@ -10,7 +10,7 @@ namespace Shake256.Tests
         public void TestShake256Hash()
         {
             var a = new Shake256();
-            var output = a.Hash();
+            var output = a.Hash("B");
 
             output.Should().NotBeEmpty();
 
