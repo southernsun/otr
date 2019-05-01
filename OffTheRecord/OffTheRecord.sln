@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shake256", "Shake256\Shake256.csproj", "{C92FD5F6-F35E-4C1E-9FCC-4D6987B498CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shake256", "Shake256\Shake256.csproj", "{C92FD5F6-F35E-4C1E-9FCC-4D6987B498CC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", "{E6B5E397-4BCD-4EBE-9628-35434DCD2E07}"
 EndProject
@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{
 	ProjectSection(SolutionItems) = preProject
 		Libraries\bccrypto-csharp-1.8.5-bin\BouncyCastle.Crypto.dll = Libraries\bccrypto-csharp-1.8.5-bin\BouncyCastle.Crypto.dll
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ed448", "Ed448\Ed448.csproj", "{844F206E-C1F7-4283-B45E-E5A12CAF48CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +32,10 @@ Global
 		{BA4D69AE-97E9-4851-9637-F6D3CB491E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA4D69AE-97E9-4851-9637-F6D3CB491E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA4D69AE-97E9-4851-9637-F6D3CB491E47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{844F206E-C1F7-4283-B45E-E5A12CAF48CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{844F206E-C1F7-4283-B45E-E5A12CAF48CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{844F206E-C1F7-4283-B45E-E5A12CAF48CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{844F206E-C1F7-4283-B45E-E5A12CAF48CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C92FD5F6-F35E-4C1E-9FCC-4D6987B498CC} = {E6B5E397-4BCD-4EBE-9628-35434DCD2E07}
 		{BA4D69AE-97E9-4851-9637-F6D3CB491E47} = {4F393868-4D05-4C4F-8BFE-85C2E072A49A}
+		{844F206E-C1F7-4283-B45E-E5A12CAF48CF} = {E6B5E397-4BCD-4EBE-9628-35434DCD2E07}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {72824E19-A965-45CC-85D4-F7808CED9C93}
