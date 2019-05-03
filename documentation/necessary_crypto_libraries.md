@@ -1,11 +1,15 @@
-- Ed448-Goldilocks
-- SMPv2
-- Diffie-Hellman ~128-bit security
-- XSalsa20
-- ChaCha20 - RFC 7539 
+Encryption:
+- [ ] Ed448-Goldilocks
+- [ ] SMPv2
+- [ ] Diffie-Hellman ~128-bit security
+- [ ] XSalsa20
+- [ ] ChaCha20 - RFC 7539 
 
-hash:
-- SHAKE-256
+Hash:
+- [x] SHAKE-256
+
+
+More information:
 
 https://crypto.stackexchange.com/questions/44957/questions-about-sha-and-shake
 
