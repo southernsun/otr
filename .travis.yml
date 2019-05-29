@@ -5,7 +5,7 @@ install:
   - nuget restore OffTheRecord/OffTheRecord.sln
   
 script:
-  - msbuild /p:Configuration=Release /p:Platform=x64 OffTheRecord/OffTheRecord.sln
+  - msbuild /p:Configuration=Release /p:Platform=AnyCpu OffTheRecord/OffTheRecord.sln
   
 notifications:
   email:
