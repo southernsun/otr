@@ -1,2 +1,15 @@
 language: csharp
 solution: OffTheRecord/OffTheRecord.sln
+
+install:
+  - nuget restore OffTheRecord/OffTheRecord.sln
+  
+script:
+  - msbuild /p:Configuration=Release /p:Platform=x64 OffTheRecord/OffTheRecord.sln
+  
+notifications:
+  email:
+    recipients:
+      - $emailaddress
+    on_success: always # default: change
+    on_failure: always # default: always
