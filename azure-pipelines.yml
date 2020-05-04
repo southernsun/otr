@@ -13,7 +13,7 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
--task: techtalk.techtalk-specflow-plus.specflow-plus.SpecFlowPlus@0
+- task: techtalk.techtalk-specflow-plus.specflow-plus.SpecFlowPlus@0
   displayName: 'SpecFlow+ build step SpecFlow.Plus.Runner.Specs'
   inputs:
     projectFilePath: Tests/SpecFlow.Plus.Runner.Specs/Features
