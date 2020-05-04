@@ -13,5 +13,16 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+-task: techtalk.techtalk-specflow-plus.specflow-plus.SpecFlowPlus@0
+  displayName: 'SpecFlow+ build step SpecFlow.Plus.Runner.Specs'
+  inputs:
+    projectFilePath: Tests/SpecFlow.Plus.Runner.Specs/Features
+    projectName: testName
+    projectLanguage: en
+    workItemPrefix: testPrefix
+  enabled: false
+  continueOnError: true
+  condition: always()
+  timeoutInMinutes: 10
 - script: dotnet build OffTheRecord/OffTheRecord.sln --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
