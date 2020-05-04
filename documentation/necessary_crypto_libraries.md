@@ -1,3 +1,19 @@
+Necessary (crypto) algo's for OTR protocol v4:
+
+| Name | Available | Source (library) | Used for | |
+|---|---|---|---|---|
+| Ed448-Goldilocks  |   |   |   |   |
+| SMPv2  |   |   |   |   |
+| Diffie-Hellman ~128-bit security  |   |   |   |   |
+| XSalsa20  |   |   |   |   |
+| ChaCha20 - RFC 7539   |   |   |   |   |
+| SHAKE-256  |   |   |   |   |
+|   |   |   |   |   |
+
+
+-- old notes
+
+
 Encryption:
 - [ ] Ed448-Goldilocks
 - [ ] SMPv2
