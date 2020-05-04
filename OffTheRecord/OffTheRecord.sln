@@ -22,13 +22,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ed448.Tests", "Ed448.Tests\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{50B1A617-E6AB-4FDE-BBAF-F23C6B488C66}"
 	ProjectSection(SolutionItems) = preProject
-		..\documentation\otrv4.md - 20190501.pdf = ..\documentation\otrv4.md - 20190501.pdf
 		readme.md = readme.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SystemTesting", "SystemTesting", "{0951E3AF-EE34-4F12-A505-E60533F63C1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OffTheRecord.OnlineConversionInitialization", "OffTheRecord.OnlineConversionInitialization\OffTheRecord.OnlineConversionInitialization.csproj", "{49E398C7-3819-40F1-8C35-515B7741B6D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OffTheRecord.OnlineConversionInitialization", "OffTheRecord.OnlineConversionInitialization\OffTheRecord.OnlineConversionInitialization.csproj", "{49E398C7-3819-40F1-8C35-515B7741B6D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
