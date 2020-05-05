@@ -6,7 +6,7 @@ This project is an OFF THE RECORD implementation using NET Core.
 
 ## Links
 
-+ [OTRv4](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)
+.. more to come...
 
 ## Working On the project
 
@@ -36,6 +36,7 @@ https://github.com/southernsun/otr/issues
 ## External references
 + The Legion of the Bouncy Castle - crypto library (https://www.bouncycastle.org/)
 + Crypto on Stackexchange - https://crypto.stackexchange.com/
++ MarkdownEditor - https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor
 
 
 ## Tools, frameworks and workflow suggestions
