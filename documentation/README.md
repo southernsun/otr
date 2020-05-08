@@ -63,6 +63,9 @@ https://github.com/nblumhardt/stateless
 
 BitConverter.IsLittleEndian;
 
+## Links
+
++ [CircleCI NetCore tutorial](https://dev.to/herocod3r/setup-a-ci-cd-pipeline-for-net-core-with-circleci-292d)
 
 ## Planning
  + [ ] Get Build going on CI (fan of circleci...suggest main author get initial build then provides access to me and others.) then running tests.
