@@ -6,7 +6,7 @@ This project is an OFF THE RECORD implementation using NET Core.
 
 ## Links
 
-.. more to come...
++ [ ] [CircleCI and NetCore](https://dev.to/herocod3r/setup-a-ci-cd-pipeline-for-net-core-with-circleci-292d)
 
 ## Working On the project
 
@@ -62,3 +62,8 @@ https://github.com/nblumhardt/stateless
 ### by southernsun:
 
 BitConverter.IsLittleEndian;
+
+
+## Planning
+ + [ ] Get Build going on CI (fan of circleci...suggest main author get initial build then provides access to me and others.) then running tests.
+ + [ ] Planning for test app (Suggest Avalon)
