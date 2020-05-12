@@ -31,7 +31,7 @@ https://github.com/southernsun/otr/issues
 
 ## References
 
-+ [Crypto Libraries](./necessary_crypto_libraries.md)
++ [Crypto Libraries](./necessary_algo_libraries.md)
 + [Understanding](./understanding_otr.md)
 
 ## External references
