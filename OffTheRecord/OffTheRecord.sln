@@ -22,7 +22,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ed448.Tests", "Ed448.Tests\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{50B1A617-E6AB-4FDE-BBAF-F23C6B488C66}"
 	ProjectSection(SolutionItems) = preProject
-		..\documentation\necessary_crypto_libraries.md = ..\documentation\necessary_crypto_libraries.md
+		..\documentation\necessary_algo_libraries.md = ..\documentation\necessary_algo_libraries.md
 		..\documentation\README.md = ..\documentation\README.md
 		..\documentation\understanding_otr.md = ..\documentation\understanding_otr.md
 	EndProjectSection
