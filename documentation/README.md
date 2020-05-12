@@ -70,4 +70,6 @@ BitConverter.IsLittleEndian;
 
 ## Planning
  + [ ] Get Build going on CI (fan of circleci...suggest main author get initial build then provides access to me and others.) then running tests.
+ bk: i had already setup azure devops pipeline. We can still consider circleci? I already had it running against travisci but removed that.
  + [ ] Planning for test app (Suggest Avalon)
+ bk: will need to look into this...
