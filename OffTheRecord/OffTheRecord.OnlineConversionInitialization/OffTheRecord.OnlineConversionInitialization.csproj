@@ -16,10 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CoreLib.Tests\CoreLib.Tests.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="OnlineConversationInitialization.feature.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
