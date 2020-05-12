@@ -9,8 +9,8 @@ namespace AlgoLibrary.Tests
         [TestMethod]
         public void ComputeHashTest()
         {
-            var a = new Shake256();
-            var output = a.ComputeHash("B");
+            var shake256 = new Shake256();
+            var output = shake256.ComputeHash("B");
 
             output.Should().NotBeEmpty();
 
