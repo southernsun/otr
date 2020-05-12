@@ -22,7 +22,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ed448.Tests", "Ed448.Tests\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{50B1A617-E6AB-4FDE-BBAF-F23C6B488C66}"
 	ProjectSection(SolutionItems) = preProject
-		readme.md = readme.md
+		..\documentation\necessary_crypto_libraries.md = ..\documentation\necessary_crypto_libraries.md
+		..\documentation\README.md = ..\documentation\README.md
+		..\documentation\understanding_otr.md = ..\documentation\understanding_otr.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SystemTesting", "SystemTesting", "{0951E3AF-EE34-4F12-A505-E60533F63C1D}"
