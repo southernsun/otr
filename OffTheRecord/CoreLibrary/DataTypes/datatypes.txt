@@ -3,13 +3,13 @@
 
 OTRv4 uses many of the data types already specified in OTRv3 specification:
 
-Bytes (BYTE):
+(x) Bytes (BYTE):
   1 byte unsigned value
-Shorts (SHORT):
+(x) Shorts (SHORT):
   2 byte unsigned value, big-endian
-Ints (INT):
+(x) Ints (INT):
   4 byte unsigned value, big-endian
-Multi-precision integers (MPI):
+(.) Multi-precision integers (MPI):
   4 byte unsigned len, big-endian
   len byte unsigned value, big-endian
   (MPIs must use the minimum-length encoding; i.e. no leading 0x00 bytes.
