@@ -2,13 +2,18 @@ Necessary (crypto) algo's for OTR protocol v4:
 
 | Name | Type | Available | Implemented | Source (library) | Used for | |
 |---|---|---|---|---|---|---|
-| Ed448-Goldilocks  |   |   |   |   |
-| SMPv2  |   |   |   |   |
-| Diffie-Hellman ~128-bit security  |   |   |   |   |
-| XSalsa20  |   |   |   |   |
-| ChaCha20 - RFC 7539   |   |   |   |   |
-| SHAKE-256  | Hash algo.  | Yes | Yes  | BouncyCastle  | to hash the symmetric key, to make a hash from the public key fingerprint, hash the 'r' from the ECDH algo.  |
-| Base64 Encoding  | Encoding  | Yes  | Yes  | .NET Core | encoding OTRv4 messages |
+| Ed448-Goldilocks                              |               | unknown | no | - | |
+| SMPv2                                         |               | unknown | no | - | |
+| Diffie-Hellman ~128-bit security              |               | unknown | no | - | |
+| XSalsa20                                      |               | unknown | no | - | |
+| ChaCha20 based on RFC 7539                    |               | unknown | no | - | |
+| Double Ratchet Algorithm                      |               | unknown | no | - | Key management |
+| Deniable authenticated key exchanges (DAKE)   |               | unknown | no | - | |
+| DAKE with Zero Knowledge (DAKEZ)              |               | unknown | no | - | |
+| Extended Zero-knowledge Diffie-Hellman (XZDH) |               | unknown | no | - | |
+| MAC Keys                                      |               | unknown | no | - | |
+| SHAKE-256                                     | Hash algo.    | Yes | Yes  | BouncyCastle  | to hash the symmetric key, to make a hash from the public key fingerprint, hash the 'r' from the ECDH algo.  |
+| Base64 Encoding                               | Encoding      | Yes | Yes  | .NET Core | encoding OTRv4 messages |
 ||||||
 
 

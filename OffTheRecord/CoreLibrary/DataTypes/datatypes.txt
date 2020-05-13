@@ -1,0 +1,39 @@
+﻿FROM the original documentation:
+---
+
+OTRv4 uses many of the data types already specified in OTRv3 specification:
+
+Bytes (BYTE):
+  1 byte unsigned value
+Shorts (SHORT):
+  2 byte unsigned value, big-endian
+Ints (INT):
+  4 byte unsigned value, big-endian
+Multi-precision integers (MPI):
+  4 byte unsigned len, big-endian
+  len byte unsigned value, big-endian
+  (MPIs must use the minimum-length encoding; i.e. no leading 0x00 bytes.
+   This is important when calculating public key fingerprints)
+Opaque variable-length data (DATA):
+  4 byte unsigned len, big-endian
+  len byte data
+OTRv4 also uses the following data types:
+
+Nonce (NONCE):
+  Always set to 0
+  12 bytes data
+
+Message Authentication Code (MAC):
+  64 bytes MAC data
+
+Ed448 point (POINT):
+  57 bytes as defined in "Encoding and Decoding" section, little-endian
+
+Ed448 scalar (SCALAR):
+  57 bytes as defined in "Encoding and Decoding" section, little-endian
+
+Client Profile (CLIENT-PROF):
+  Detailed in "Client Profile Data Type" section
+
+Prekey Profile (PREKEY-PROF)
+  Detailed in "Prekey Profile Data Type" section

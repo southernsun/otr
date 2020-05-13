@@ -8,7 +8,7 @@ Alice <---> Bob: Exchange data messages.
 ```
 
 So what is DAKE?
-It stands for Deniable Key Exchange.
+It stands for Deniable authenticated key exchanges
 
 # Without DAKE
 
