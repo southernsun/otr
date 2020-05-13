@@ -8,6 +8,8 @@ namespace OffTheRecord.CoreLibrary.Classes
     {
         ////private uint instanceTag; // 4 byte unsigned int to hold instance tag.
 
+        //// Notes for future reference: https://stackoverflow.com/questions/17080112/generate-random-uint
+
         public static bool IsValid(uint instanceTag)
         {
             // hex = 100 is 256 in decimal;
