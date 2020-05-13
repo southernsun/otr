@@ -19,7 +19,7 @@ Opaque variable-length data (DATA):
   len byte data
 OTRv4 also uses the following data types:
 
-Nonce (NONCE):
+(.) Nonce (NONCE):
   Always set to 0
   12 bytes data
 
