@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace AlgoLibrary.Tests
 {
     [TestClass]
-    public class AlgoLibraryTests
+    public class Shake256Test
     {
         [TestMethod]
         public void ComputeHashTest()

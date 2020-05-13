@@ -7,6 +7,9 @@ Purpose and intend: to develop a C# implementation of the Off The Record library
 Achieved by implementing in C# using .NET Standard and/or Core
 
 **NOTE:** It will not support backward compatibility and just support OTR Protocol v4.
+**NOTE2:** Although OTR recommends secure deletion of intermediate values and messages, 
+this will not be supported in the initial version of this implementation, as current technology within the .NET (core) framework is limited and not guaranteed.
+In other words, your local device should be kept secure. If your local device that runs OTR is compromised, your messages might be compromised.
 
 # Resources
 
