@@ -9,6 +9,9 @@ This project is an OFF THE RECORD implementation using NET Core.
 + [ ] [CircleCI and NetCore](https://dev.to/herocod3r/setup-a-ci-cd-pipeline-for-net-core-with-circleci-292d)
 bk: Not relevant? we have Azure Devops pipeline setup and previously travisci which we could re-enable again.
 
++ OTR implementation +/- 90% implemented as reference:
+https://bugs.otr.im/otrv4/libotr-ng/-/tree/master/src
+
 ## Working On the project
 
 If you have access to the repo and you cloned it.  These are tools and workflow suggestions.
