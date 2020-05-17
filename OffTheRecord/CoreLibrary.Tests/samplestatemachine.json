@@ -24,7 +24,7 @@
     {
       "from": "connecting",
       "to": "connected",
-      "eventName": "initialized",
+      "eventName": "connected",
       "actions": [
         "bubbleConnected"
       ]

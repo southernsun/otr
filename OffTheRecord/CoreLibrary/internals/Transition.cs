@@ -12,5 +12,10 @@ namespace OffTheRecord.CoreLibrary.internals
         public string eventName { get; set; }
 
         public List<string> actions { get; set; }
+
+        public Transition()
+        {
+            this.actions = new List<string>();
+        }
     }
 }

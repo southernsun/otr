@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OffTheRecord.CoreLibrary
+namespace OffTheRecord.CoreLibrary.Classes
 {
     public class State
     {

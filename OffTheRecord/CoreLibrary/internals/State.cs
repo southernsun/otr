@@ -6,6 +6,6 @@ namespace OffTheRecord.CoreLibrary.internals
 {
     public class State
     {
-        bool isDefault { get; set; }
+        public bool isDefault { get; set; }
     }
 }
