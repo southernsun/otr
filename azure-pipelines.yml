@@ -27,7 +27,7 @@ steps:
   displayName: Install ReportGenerator tool  
 
 - script: $(Build.SourcesDirectory)/reportgenerator -reports:$(Build.SourcesDirectory)/**/coverage.cobertura.xml -targetdir:$(Build.SourcesDirectory)/coverlet/reports -reporttypes:"Cobertura"
-    displayName: Create reports
+  displayName: Create reports
 
 - task: PublishCodeCoverageResults@1
   displayName: 'Publish code coverage'
