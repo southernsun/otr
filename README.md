@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/southernsun/otr.svg?branch=master)](https://travis-ci.org/southernsun/otr)
 
+[![Coverage Status](https://coveralls.io/repos/github/southernsun/otr/badge.svg?branch=master)](https://coveralls.io/github/southernsun/otr?branch=master)
+
 # Off the Record in C#
 
 Purpose and intend: to develop a C# implementation of the Off The Record library that can be used cross platform.
