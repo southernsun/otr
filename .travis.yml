@@ -1,11 +1,13 @@
 language: csharp
+mono: none
+dist: xenial
+dotnet: 3.1
 solution: OffTheRecord/OffTheRecord.sln
 
-install:
-  - nuget restore OffTheRecord/OffTheRecord.sln
-  
 script:
-  - msbuild /p:Configuration=Release /p:Platform="Any CPU" OffTheRecord/OffTheRecord.sln
+ - dotnet build OffTheRecord/OffTheRecord.sln
+ - dotnet test OffTheRecord/OffTheRecord.sln --logger "trx;LogFileName=testresults.trx"
+ - dotnet test OffTheRecord/OffTheRecord.sln --collect:"XPlat Code Coverage"
   
 notifications:
   email:
