@@ -28,7 +28,18 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'
 
 - script: 'dotnet test OffTheRecord/OffTheRecord.sln --logger "trx" /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=TestResults/Coverage/'
-  displayName: 'Running tests'
+  displayName: 'Running Tests and collect Code Coverage'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: custom
+    custom: tool
+    arguments: install --tool-path . dotnet-reportgenerator-globaltool
+  displayName: Install ReportGenerator tool  
+
+- script: dotnet reportgenerator "-reports:$(Build.SourcesDirectory)/AlgoLibrary.Tests/TestResults/Coverage/coverage.cobertura.xml" "-targetDir:$(Build.SourcesDirectory)/AlgoLibrary.Tests/TestResults/Coverage/Reports" -tag:$(Build.BuildNumber) -reportTypes:htmlInline
+  workingDirectory: $(Build.SourcesDirectory)/AlgoLibrary.Tests
+  displayName: 'dotnet reportgenerator'
 
 - task: PublishTestResults@2
   inputs:
