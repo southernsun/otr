@@ -18,7 +18,7 @@
       "to": "connecting",
       "eventName": "connect",
       "actions": [
-        "bubbleConnecting"
+        "BubbleConnecting"
       ]
     },
     {
@@ -26,7 +26,7 @@
       "to": "connected",
       "eventName": "connected",
       "actions": [
-        "bubbleConnected"
+        "BubbleConnected"
       ]
     },
     {
@@ -34,7 +34,7 @@
       "to": "initialized",
       "eventName": "disconnect",
       "actions": [
-        "bubbleConnected"
+        "BubbleConnected"
       ]
     }
   ]
