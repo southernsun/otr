@@ -26,23 +26,18 @@ steps:
     arguments: install --tool-path $(Build.SourcesDirectory) dotnet-reportgenerator-globaltool
   displayName: Install ReportGenerator tool  
 
-- script: $(Build.SourcesDirectory)/reportgenerator "-reports:$(Build.SourcesDirectory)/OffTheRecord/AlgoLibrary.Tests/TestResults/Coverage/coverage.cobertura.xml" "-targetDir:$(Build.SourcesDirectory)/OffTheRecord/AlgoLibrary.Tests/TestResults/Coverage/Reports" -tag:$(Build.BuildNumber) -reportTypes:htmlInline
-  workingDirectory: $(Build.SourcesDirectory)/OffTheRecord/AlgoLibrary.Tests
-  displayName: 'dotnet reportgenerator'
+- script: $(Build.SourcesDirectory)/reportgenerator -reports:$(Build.SourcesDirectory)/**/coverage.cobertura.xml -targetdir:$(Build.SourcesDirectory)/coverlet/reports -reporttypes:"Cobertura"
+    displayName: Create reports
 
-- script: $(Build.SourcesDirectory)/reportgenerator "-reports:$(Build.SourcesDirectory)/OffTheRecord/CoreLibrary.Tests/TestResults/Coverage/coverage.cobertura.xml" "-targetDir:$(Build.SourcesDirectory)/OffTheRecord/CoreLibrary.Tests/TestResults/Coverage/Reports" -tag:$(Build.BuildNumber) -reportTypes:htmlInline
-  workingDirectory: $(Build.SourcesDirectory)/OffTheRecord/CoreLibrary.Tests
-  displayName: 'dotnet reportgenerator'
+- task: PublishCodeCoverageResults@1
+  displayName: 'Publish code coverage'
+  inputs:
+    codeCoverageTool: Cobertura
+    summaryFileLocation: $(Build.SourcesDirectory)/coverlet/reports/Cobertura.xml
 
 - task: PublishTestResults@2
+  displayName: 'Publish test results'
   inputs:
     testRunner: VSTest
     testResultsFiles: '**/*.trx'
     failTaskOnFailedTests: true
-
-- task: PublishCodeCoverageResults@1
-  inputs:
-    codeCoverageTool: 'cobertura'
-    summaryFileLocation: $(Build.SourcesDirectory)/TestResults/Coverage/**/coverage.cobertura.xml
-    reportDirectory: $(Build.SourcesDirectory)/TestResults/Coverage/Reports
-    failIfCoverageEmpty: false
