@@ -1,6 +1,4 @@
-# Build and test .NET Core projects
-# Add steps that run tests, create a NuGet package, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+name: OffTheRecord-CI
 
 trigger:
 - master
@@ -12,22 +10,10 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- task: techtalk.techtalk-specflow-plus.specflow-plus.SpecFlowPlus@0
-  inputs:
-    projectFilePath: Tests/SpecFlow.Plus.Runner.Specs/Features
-    projectName: testName
-    projectLanguage: en
-    workItemPrefix: testPrefix
-  enabled: false
-  continueOnError: true
-  condition: always()
-  timeoutInMinutes: 10
-  displayName: 'SpecFlow+ build step SpecFlow.Plus.Runner.Specs'
-
 - script: dotnet build OffTheRecord/OffTheRecord.sln --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 
-- script: 'dotnet test OffTheRecord/OffTheRecord.sln --logger "trx" /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=TestResults/Coverage/'
+- script: dotnet test OffTheRecord/OffTheRecord.sln --logger "trx;LogFileName=testresults.trx" /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=TestResults/Coverage/
   displayName: 'Running Tests and collect Code Coverage'
 
 - task: DotNetCoreCLI@2
@@ -41,8 +27,19 @@ steps:
   workingDirectory: $(Build.SourcesDirectory)/OffTheRecord/AlgoLibrary.Tests
   displayName: 'dotnet reportgenerator'
 
+- script: dotnet reportgenerator "-reports:$(Build.SourcesDirectory)/TestResults/Coverage/coverage.cobertura.xml" "-targetDir:$(Build.SourcesDirectory)/TestResults/Coverage/Reports" -tag:$(Build.BuildNumber) -reportTypes:htmlInline
+  workingDirectory: $(Build.SourcesDirectory)/BuildApp.Web.Tests
+  displayName: 'dotnet reportgenerator'
+
 - task: PublishTestResults@2
   inputs:
     testRunner: VSTest
     testResultsFiles: '**/*.trx'
     failTaskOnFailedTests: true
+
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: 'cobertura'
+    summaryFileLocation: $(Build.SourcesDirectory)/TestResults/Coverage/**/coverage.cobertura.xml
+    reportDirectory: $(Build.SourcesDirectory)/TestResults/Coverage/Reports
+    failIfCoverageEmpty: false
