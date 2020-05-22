@@ -73,8 +73,14 @@ BitConverter.IsLittleEndian;
 
 ## Planning
  + [x] Get Build going on CI (fan of circleci...suggest main author get initial build then provides access to me and others.) then running tests.
+ 
  bk: i had already setup azure devops pipeline. We can still consider circleci? I already had it running against travisci but removed that. see https://dev.azure.com/OffTheRecordv4/OTRv4/_build/results?buildId=21&view=ms.vss-test-web.build-test-results-tab
  Fine with azure pipelines but not familiar with debugging.
+ 
  + [ ] Is Code Coverage a priority...it is huge in javascriptland.
+ 
+ bk: it is part of azure, we just need to push the results. i will look into this.
+ 
  + [ ] Planning for test app (Suggest Avalon)
+ 
  bk: will need to look into this... url?

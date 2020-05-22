@@ -39,7 +39,7 @@ will lead to a new thread created.
 
 ```plantuml
 class StateMachine {
-StateMachine(StateMachineDefinition definition, object callbackObject)
+    StateMachine(StateMachineDefinition definition, object callbackObject)
 }
 
 package internals {
@@ -67,11 +67,10 @@ package internals {
 ## c#
 
 ```csharp
-            var stateMachineDefinition = StateMachineUtils.Parse("samplestatemachine.json");
-            this.cbObj = new StateMachineCallbacks();
-            var state = new StateMachine(stateMachineDefinition, this.cbObj);
-            this.sm = state;
-
+  var stateMachineDefinition = StateMachineUtils.Parse("samplestatemachine.json");
+  this.cbObj = new StateMachineCallbacks();
+  var state = new StateMachine(stateMachineDefinition, this.cbObj);
+  this.sm = state;
 ```
 
 ## JSON for state machine
