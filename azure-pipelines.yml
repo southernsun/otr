@@ -37,7 +37,7 @@ steps:
     arguments: install --tool-path . dotnet-reportgenerator-globaltool
   displayName: Install ReportGenerator tool  
 
-- script: './reportgenerator "-reports:$(Build.SourcesDirectory)/OffTheRecord/AlgoLibrary.Tests/TestResults/Coverage/coverage.cobertura.xml" "-targetDir:$(Build.SourcesDirectory)/OffTheRecord/AlgoLibrary.Tests/TestResults/Coverage/Reports" -tag:$(Build.BuildNumber) -reportTypes:htmlInline'
+- script: ./reportgenerator "-reports:$(Build.SourcesDirectory)/OffTheRecord/AlgoLibrary.Tests/TestResults/Coverage/coverage.cobertura.xml" "-targetDir:$(Build.SourcesDirectory)/OffTheRecord/AlgoLibrary.Tests/TestResults/Coverage/Reports" -tag:$(Build.BuildNumber) -reportTypes:htmlInline
   workingDirectory: $(Build.SourcesDirectory)/OffTheRecord/AlgoLibrary.Tests
   displayName: 'dotnet reportgenerator'
 
