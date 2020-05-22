@@ -19,10 +19,10 @@
           command:
             dotnet test OffTheRecord/OffTheRecord.sln --logger "trx;LogFileName=testresults.trx" --collect:"XPlat Code Coverage --settings OffTheRecord/coverlet.runsettings"
       - run:
-          name: Install coveralls tool
+          name: Install coveralls.io tool
           command:
-            dotnet tool install coveralls.netcore --version 2.0.0 --tool-path .
+            dotnet tool install coveralls.netcore --version 2.1.0 --tool-path .
       - run: 
           name: Upload code coverage results to coverall.io
           command:
-            ./coveralls.net --version -r $COVERALLIO
+            ./coveralls.net ./ -f *opencover.xml -r $COVERALLIO --recursive
