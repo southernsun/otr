@@ -1,10 +1,10 @@
-Azure DevOps: [![Build Status](https://dev.azure.com/OffTheRecordv4/OTRv4/_apis/build/status/southernsun.otr?branchName=master)](https://dev.azure.com/OffTheRecordv4/OTRv4/_build/latest?definitionId=1&branchName=master)
+[![Build Status](https://dev.azure.com/OffTheRecordv4/OTRv4/_apis/build/status/southernsun.otr?branchName=master)](https://dev.azure.com/OffTheRecordv4/OTRv4/_build/latest?definitionId=1&branchName=master) <sub><sup>Azure DevOps</sup></sub>
 
-Travis-CI: [![Build Status](https://travis-ci.org/southernsun/otr.svg?branch=master)](https://travis-ci.org/southernsun/otr)
+[![Build Status](https://travis-ci.org/southernsun/otr.svg?branch=master)](https://travis-ci.org/southernsun/otr) <sub><sup>Travis-CI</sup></sub>
 
-Coveralls: [![Coverage Status](https://coveralls.io/repos/github/southernsun/otr/badge.svg?branch=master)](https://coveralls.io/github/southernsun/otr?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/southernsun/otr/badge.svg?branch=master)](https://coveralls.io/github/southernsun/otr?branch=master) <sub><sup>Coveralls</sup></sub>
 
-CircleCI: [![CircleCI](https://circleci.com/gh/southernsun/otr.svg?style=svg)](https://circleci.com/gh/southernsun/otr)
+[![CircleCI](https://circleci.com/gh/southernsun/otr.svg?style=svg)](https://circleci.com/gh/southernsun/otr) <sub><sup>CircleCI</sup></sub>
 
 # Off the Record in C#
 
