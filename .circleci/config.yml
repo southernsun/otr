@@ -25,4 +25,4 @@
       - run: 
           name: Upload code coverage results to coverall.io
           command:
-            ./coveralls.net ./ -f *opencover.xml --recursive -r ${COVERALLIO}
+            ./coveralls.net . -f *opencover.xml --recursive -r ${COVERALLIO}
