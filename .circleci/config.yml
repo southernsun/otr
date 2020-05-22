@@ -22,3 +22,7 @@
           name: Install coveralls tool
           command:
             dotnet tool install --global coveralls.netcore --version 2.0.0
+      - run: 
+          name: Upload code coverage results to coverall.io
+          command:
+            coveralls.net --version
