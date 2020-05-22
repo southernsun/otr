@@ -10,10 +10,6 @@
     
      steps:
        - checkout
-       - run:
-          name: Restore packages
-          command:
-            dotnet restore
        - run: 
           name: Building solution
           command:
