@@ -13,7 +13,6 @@ variables:
 
 steps:
 - task: techtalk.techtalk-specflow-plus.specflow-plus.SpecFlowPlus@0
-  displayName: 'SpecFlow+ build step SpecFlow.Plus.Runner.Specs'
   inputs:
     projectFilePath: Tests/SpecFlow.Plus.Runner.Specs/Features
     projectName: testName
@@ -23,6 +22,7 @@ steps:
   continueOnError: true
   condition: always()
   timeoutInMinutes: 10
+  displayName: 'SpecFlow+ build step SpecFlow.Plus.Runner.Specs'
 
 - script: dotnet build OffTheRecord/OffTheRecord.sln --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
@@ -46,7 +46,7 @@ steps:
   displayName: Create reports
 
 - task: PublishCodeCoverageResults@1
-  displayName: 'Publish code coverage'
   inputs:
     codeCoverageTool: Cobertura
     summaryFileLocation: $(Build.SourcesDirectory)/coverlet/reports/Cobertura.xml  
+  displayName: 'Publish code coverage'
