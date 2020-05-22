@@ -27,8 +27,8 @@ steps:
   workingDirectory: $(Build.SourcesDirectory)/OffTheRecord/AlgoLibrary.Tests
   displayName: 'dotnet reportgenerator'
 
-- script: dotnet reportgenerator "-reports:$(Build.SourcesDirectory)/TestResults/Coverage/coverage.cobertura.xml" "-targetDir:$(Build.SourcesDirectory)/TestResults/Coverage/Reports" -tag:$(Build.BuildNumber) -reportTypes:htmlInline
-  workingDirectory: $(Build.SourcesDirectory)/BuildApp.Web.Tests
+- script: $(Build.SourcesDirectory)/reportgenerator "-reports:$(Build.SourcesDirectory)/OffTheRecord/CoreLibrary.Tests/TestResults/Coverage/coverage.cobertura.xml" "-targetDir:$(Build.SourcesDirectory)/OffTheRecord/CoreLibrary.Tests/TestResults/Coverage/Reports" -tag:$(Build.BuildNumber) -reportTypes:htmlInline
+  workingDirectory: $(Build.SourcesDirectory)/OffTheRecord/CoreLibrary.Tests
   displayName: 'dotnet reportgenerator'
 
 - task: PublishTestResults@2
