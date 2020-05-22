@@ -13,6 +13,9 @@ steps:
 - script: dotnet build OffTheRecord/OffTheRecord.sln --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 
+- script: dotnet test OffTheRecord/AlgoLibrary.Tests/ /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=TestResults/Coverage/
+  displayName: come-on!
+
 - script: dotnet test OffTheRecord/OffTheRecord.sln /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=TestResults/Coverage/
   displayName: 'Running Tests and collect Code Coverage'
 
