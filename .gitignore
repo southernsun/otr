@@ -332,5 +332,6 @@ ASALocalRun/
 # nuget storage for tools
 .store/
 
-# report generator tool
+# nuget tools
 reportgenerator.exe
+coveralls.net.exe
