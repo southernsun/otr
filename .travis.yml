@@ -6,8 +6,7 @@ solution: OffTheRecord/OffTheRecord.sln
 
 script:
  - dotnet build OffTheRecord/OffTheRecord.sln
- - dotnet test OffTheRecord/OffTheRecord.sln --logger "trx;LogFileName=testresults.trx"
- - dotnet test OffTheRecord/OffTheRecord.sln --collect:"XPlat Code Coverage"
+ - dotnet test OffTheRecord/OffTheRecord.sln --logger "trx;LogFileName=testresults.trx" --collect:"XPlat Code Coverage"
   
 notifications:
   email:
