@@ -13,8 +13,11 @@ steps:
 - script: dotnet build OffTheRecord/OffTheRecord.sln --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 
-- script: dotnet test OffTheRecord/OffTheRecord.sln --logger "trx;LogFileName=testresults.trx" /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=TestResults/Coverage/
-  displayName: 'Running Tests and collect Code Coverage'
+- script: dotnet test OffTheRecord/OffTheRecord.sln --logger "trx;LogFileName=testresults.trx"
+  displayName: 'Running Tests'
+
+- script: dotnet test OffTheRecord/OffTheRecord.sln --collect:"XPlat Code Coverage"
+  displayName: 'Collect Code Coverage'
 
 - task: DotNetCoreCLI@2
   inputs:
