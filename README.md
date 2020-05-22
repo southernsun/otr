@@ -1,5 +1,7 @@
 [![Build Status](https://dev.azure.com/OffTheRecordv4/OTRv4/_apis/build/status/southernsun.otr?branchName=master)](https://dev.azure.com/OffTheRecordv4/OTRv4/_build/latest?definitionId=1&branchName=master)
 
+[![Build Status](https://travis-ci.org/southernsun/otr.svg?branch=master)](https://travis-ci.org/southernsun/otr)
+
 # Off the Record in C#
 
 Purpose and intend: to develop a C# implementation of the Off The Record library that can be used cross platform.
