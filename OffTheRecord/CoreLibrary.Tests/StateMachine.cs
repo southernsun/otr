@@ -1,28 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.InteropServices.ComTypes;
-using System.Text;
-using System.Threading;
+﻿using System.Threading;
 using FluentAssertions;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
 using OffTheRecord.CoreLibrary.Classes;
 using OffTheRecord.CoreLibrary.internals;
 
-namespace CoreLib.Tests
+namespace CoreLibrary.Tests
 {
     public class StateMachineCallbacks
     {
         public bool isConnnecting { get; private set; }
         public bool isConnnected { get; private set; }
 
-        public void bubbleConnected()
+        public void BubbleConnected()
         {
             this.isConnnecting = false;
             this.isConnnected = true;
         }
 
-        public void bubbleConnecting()
+        public void BubbleConnecting()
         {
             this.isConnnecting = true;
         }
@@ -35,7 +30,7 @@ namespace CoreLib.Tests
         private StateMachineCallbacks cbObj;
 
         [SetUp]
-        public void constructStateMachine()
+        public void ConstructStateMachine()
         {
             var stateMachineDefinition = StateMachineUtils.Parse("samplestatemachine.json");
             this.cbObj = new StateMachineCallbacks();
