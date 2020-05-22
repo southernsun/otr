@@ -14,7 +14,3 @@
         name: Building solution
         command:
           dotnet build OffTheRecord/OffTheRecord.sln
-      - run:
-        name: Run tests and code coverage
-        command:
-          dotnet test OffTheRecord/OffTheRecord.sln --logger "trx;LogFileName=testresults.trx" --collect:"XPlat Code Coverage"
