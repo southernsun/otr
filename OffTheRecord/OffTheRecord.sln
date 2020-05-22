@@ -20,12 +20,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentat
 	ProjectSection(SolutionItems) = preProject
 		..\documentation\necessary_algo_libraries.md = ..\documentation\necessary_algo_libraries.md
 		..\documentation\README.md = ..\documentation\README.md
+		..\documentation\src\StateMachine.md = ..\documentation\src\StateMachine.md
 		..\documentation\understanding_otr.md = ..\documentation\understanding_otr.md
 	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SystemTesting", "SystemTesting", "{0951E3AF-EE34-4F12-A505-E60533F63C1D}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OffTheRecord.OnlineConversionInitialization", "OffTheRecord.OnlineConversionInitialization\OffTheRecord.OnlineConversionInitialization.csproj", "{49E398C7-3819-40F1-8C35-515B7741B6D0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetFramework472", "NetFramework472", "{357F02E3-A533-4356-988C-7C29442AE678}"
 EndProject
@@ -59,8 +56,6 @@ Global
 		{844F206E-C1F7-4283-B45E-E5A12CAF48CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D068858-7936-4DD4-8576-CFBB7137E867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3D068858-7936-4DD4-8576-CFBB7137E867}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{49E398C7-3819-40F1-8C35-515B7741B6D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{49E398C7-3819-40F1-8C35-515B7741B6D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C0B7EF2-966F-40D4-B22C-FF6084EE19F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7C0B7EF2-966F-40D4-B22C-FF6084EE19F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C0B7EF2-966F-40D4-B22C-FF6084EE19F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -87,8 +82,6 @@ Global
 		{26696B66-8882-4A53-BB33-3DDF4C2DB497} = {357F02E3-A533-4356-988C-7C29442AE678}
 		{844F206E-C1F7-4283-B45E-E5A12CAF48CF} = {E6B5E397-4BCD-4EBE-9628-35434DCD2E07}
 		{3D068858-7936-4DD4-8576-CFBB7137E867} = {4F393868-4D05-4C4F-8BFE-85C2E072A49A}
-		{0951E3AF-EE34-4F12-A505-E60533F63C1D} = {357F02E3-A533-4356-988C-7C29442AE678}
-		{49E398C7-3819-40F1-8C35-515B7741B6D0} = {0951E3AF-EE34-4F12-A505-E60533F63C1D}
 		{AB76D7E5-E39B-4DC9-8085-8304EBEEE8D0} = {CBBDF5C9-67D8-4E1E-96A9-EB2076261075}
 		{C1D614DF-8CC7-420A-BA21-E266CA2058EF} = {CBBDF5C9-67D8-4E1E-96A9-EB2076261075}
 	EndGlobalSection
