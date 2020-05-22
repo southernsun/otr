@@ -21,12 +21,8 @@
       - run:
           name: Install coveralls tool
           command:
-            dotnet tool install --global coveralls.netcore --version 2.0.0
-      - run:
-          name: Update PATH
-          command:
-            export PATH="$PATH:/root/.dotnet/tools"
+            dotnet tool install coveralls.netcore --version 2.0.0 --tool-path .
       - run: 
           name: Upload code coverage results to coverall.io
           command:
-            coveralls.net --version -r $COVERALLIO
+            ./coveralls.net --version -r $COVERALLIO
