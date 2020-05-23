@@ -1,5 +1,11 @@
 # OTR
 
+## Badges
+
+### CircleCI
+
+[![CircleCI](https://circleci.com/gh/southernsun/otr.svg?style=svg)](https://circleci.com/gh/southernsun/otr)
+
 ## Concept
 
 This project is an OFF THE RECORD implementation using NET Core.
