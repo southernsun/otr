@@ -51,7 +51,7 @@ namespace CoreLibrary.Tests
             //this.cbObj.isConnnecting.Should().BeTrue();
 
             this.sm.FireEvent("connect");
-            Thread.Sleep(1);
+            Thread.Sleep(10);
 
             this.sm.currentState.Name.Should().Be("connecting");
             this.cbObj.isConnnected.Should().BeFalse();
@@ -59,7 +59,7 @@ namespace CoreLibrary.Tests
 
 
             this.sm.FireEvent("connected");
-            Thread.Sleep(1);
+            Thread.Sleep(10);
 
             this.sm.currentState.Name.Should().Be("connected");
             this.cbObj.isConnnected.Should().BeTrue();
