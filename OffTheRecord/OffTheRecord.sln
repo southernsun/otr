@@ -3,19 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", "{E6B5E397-4BCD-4EBE-9628-35434DCD2E07}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{4F393868-4D05-4C4F-8BFE-85C2E072A49A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{26696B66-8882-4A53-BB33-3DDF4C2DB497}"
-	ProjectSection(SolutionItems) = preProject
-		Libraries\bccrypto-csharp-1.8.5-bin\BouncyCastle.Crypto.dll = Libraries\bccrypto-csharp-1.8.5-bin\BouncyCastle.Crypto.dll
-	EndProjectSection
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ed448", "Ed448\Ed448.csproj", "{844F206E-C1F7-4283-B45E-E5A12CAF48CF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ed448.Tests", "Ed448.Tests\Ed448.Tests.csproj", "{3D068858-7936-4DD4-8576-CFBB7137E867}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{50B1A617-E6AB-4FDE-BBAF-F23C6B488C66}"
 	ProjectSection(SolutionItems) = preProject
 		..\documentation\necessary_algo_libraries.md = ..\documentation\necessary_algo_libraries.md
@@ -23,8 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentat
 		..\documentation\src\StateMachine.md = ..\documentation\src\StateMachine.md
 		..\documentation\understanding_otr.md = ..\documentation\understanding_otr.md
 	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetFramework472", "NetFramework472", "{357F02E3-A533-4356-988C-7C29442AE678}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreLibrary", "CoreLibrary\CoreLibrary.csproj", "{7C0B7EF2-966F-40D4-B22C-FF6084EE19F1}"
 EndProject
@@ -52,10 +37,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{844F206E-C1F7-4283-B45E-E5A12CAF48CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{844F206E-C1F7-4283-B45E-E5A12CAF48CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3D068858-7936-4DD4-8576-CFBB7137E867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3D068858-7936-4DD4-8576-CFBB7137E867}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C0B7EF2-966F-40D4-B22C-FF6084EE19F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7C0B7EF2-966F-40D4-B22C-FF6084EE19F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C0B7EF2-966F-40D4-B22C-FF6084EE19F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -77,11 +58,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E6B5E397-4BCD-4EBE-9628-35434DCD2E07} = {357F02E3-A533-4356-988C-7C29442AE678}
-		{4F393868-4D05-4C4F-8BFE-85C2E072A49A} = {357F02E3-A533-4356-988C-7C29442AE678}
-		{26696B66-8882-4A53-BB33-3DDF4C2DB497} = {357F02E3-A533-4356-988C-7C29442AE678}
-		{844F206E-C1F7-4283-B45E-E5A12CAF48CF} = {E6B5E397-4BCD-4EBE-9628-35434DCD2E07}
-		{3D068858-7936-4DD4-8576-CFBB7137E867} = {4F393868-4D05-4C4F-8BFE-85C2E072A49A}
 		{AB76D7E5-E39B-4DC9-8085-8304EBEEE8D0} = {CBBDF5C9-67D8-4E1E-96A9-EB2076261075}
 		{C1D614DF-8CC7-420A-BA21-E266CA2058EF} = {CBBDF5C9-67D8-4E1E-96A9-EB2076261075}
 	EndGlobalSection
