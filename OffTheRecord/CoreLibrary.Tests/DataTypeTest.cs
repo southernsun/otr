@@ -1,4 +1,5 @@
-﻿using FluentAssertions;
+﻿using System;
+using FluentAssertions;
 using NUnit.Framework;
 using OffTheRecord.CoreLibrary.DataTypes;
 
@@ -91,6 +92,17 @@ namespace CoreLibrary.Tests
             // TODO: testing needs to be extended. 
             var mpi = new OtrMpi();
             mpi.Should().NotBeNull();
+        }
+
+        [Test]
+        public void ArrayCantHoldMpiSizeOf4GB()
+        {
+            Action action = () =>
+            {
+                Array a = new byte[uint.MaxValue];
+            };
+
+            action.Should().Throw<ArithmeticException>();
         }
     }
 }
