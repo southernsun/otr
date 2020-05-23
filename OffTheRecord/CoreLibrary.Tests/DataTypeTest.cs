@@ -75,5 +75,22 @@ namespace CoreLibrary.Tests
 
             short3.Should().Be(short4);
         }
+
+        [Test]
+        public void DataTypeNonceInitializesToZero()
+        {
+            var compare = new byte[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+
+            OtrNonce nonce;
+            nonce.Value.Should().BeEquivalentTo(compare);
+        }
+
+        [Test]
+        public void DataTypeMpi()
+        {
+            // TODO: testing needs to be extended. 
+            var mpi = new OtrMpi();
+            mpi.Should().NotBeNull();
+        }
     }
 }
