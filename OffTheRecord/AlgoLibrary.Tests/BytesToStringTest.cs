@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using FluentAssertions;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using FluentAssertions;
+using NUnit.Framework;
 
 namespace AlgoLibrary.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class BytesToStringTest
     {
-        [TestMethod]
+        [Test]
         public void EncodingTest()
         {
             const string input = "Example string";
