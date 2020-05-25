@@ -13,11 +13,8 @@ steps:
 - script: dotnet build OffTheRecord/OffTheRecord.sln --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 
-- script: dotnet test OffTheRecord/OffTheRecord.sln --logger "trx;LogFileName=testresults.trx"
-  displayName: 'Running Tests'
-
-- script: dotnet test OffTheRecord/OffTheRecord.sln --collect:"XPlat Code Coverage"
-  displayName: 'Collect Code Coverage'
+- script: dotnet test OffTheRecord/OffTheRecord.sln --logger "trx;LogFileName=testresults.trx" --collect:"XPlat Code Coverage" --settings "OffTheRecord/coverlet.runsettings"
+  displayName: 'Running Tests and Code Coverage'
 
 - task: DotNetCoreCLI@2
   inputs:
@@ -26,8 +23,18 @@ steps:
     arguments: install --tool-path $(Build.SourcesDirectory) dotnet-reportgenerator-globaltool
   displayName: Install ReportGenerator tool  
 
+- task: DotNetCoreCLI@2
+  inputs:
+    command: custom
+    custom: tool
+    arguments: install --tool-path $(Build.SourcesDirectory) coveralls.netcore --version 2.1.0
+  displayName: Install Coveralls.netcore tool  
+
 - script: $(Build.SourcesDirectory)/reportgenerator -reports:$(Build.SourcesDirectory)/**/coverage.cobertura.xml -targetdir:$(Build.SourcesDirectory)/coverlet/reports -reporttypes:"Cobertura"
   displayName: Create reports
+
+- script: $(Build.SourcesDirectory)/coveralls.net $(Build.SourcesDirectory) -f *opencover.xml --recursive -r $(COVERALLIO)
+  displayName: Send code coverage to Coveralls.io
 
 - task: PublishCodeCoverageResults@1
   displayName: 'Publish code coverage'

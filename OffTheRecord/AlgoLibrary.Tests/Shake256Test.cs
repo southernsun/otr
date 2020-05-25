@@ -1,12 +1,12 @@
 using FluentAssertions;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace AlgoLibrary.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class Shake256Test
     {
-        [TestMethod]
+        [Test]
         public void ComputeHashTest()
         {
             var shake256 = new Shake256();
