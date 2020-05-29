@@ -13,12 +13,12 @@ Necessary (crypto) algo's for OTR protocol v4:
 
 Functions:
 
-| Name | Type | Available | Implemented | Used for | |
-|---|---|---|---|---|---|---|
+| Name | Type | Available | Implemented | Used for |
+|---|---|---|---|---|
 | Key Derivation Function (KDF)                 |               | unknown | no | |
 | Hash with Context Function (HCF)              |               | unknown | no | |
 | Hash with Context Message Authentication Code (HCMAC)  |               | unknown | no | |
-||||||
+|||||
 
 protocols:
 
