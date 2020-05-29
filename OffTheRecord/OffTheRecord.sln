@@ -31,6 +31,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoLibrary", "AlgoLibrary\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoLibrary.Tests", "AlgoLibrary.Tests\AlgoLibrary.Tests.csproj", "{C1D614DF-8CC7-420A-BA21-E266CA2058EF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BFAC52BF-59DE-4C60-8C3E-D14A4A56AB4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowTests", "SpecFlowTests\SpecFlowTests.csproj", "{A1A1BD6A-F486-44D8-B644-8A3955C17B08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +57,10 @@ Global
 		{C1D614DF-8CC7-420A-BA21-E266CA2058EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1D614DF-8CC7-420A-BA21-E266CA2058EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1D614DF-8CC7-420A-BA21-E266CA2058EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A1BD6A-F486-44D8-B644-8A3955C17B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A1BD6A-F486-44D8-B644-8A3955C17B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A1BD6A-F486-44D8-B644-8A3955C17B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A1BD6A-F486-44D8-B644-8A3955C17B08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +68,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{AB76D7E5-E39B-4DC9-8085-8304EBEEE8D0} = {CBBDF5C9-67D8-4E1E-96A9-EB2076261075}
 		{C1D614DF-8CC7-420A-BA21-E266CA2058EF} = {CBBDF5C9-67D8-4E1E-96A9-EB2076261075}
+		{A1A1BD6A-F486-44D8-B644-8A3955C17B08} = {BFAC52BF-59DE-4C60-8C3E-D14A4A56AB4B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {72824E19-A965-45CC-85D4-F7808CED9C93}
