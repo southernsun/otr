@@ -5,12 +5,19 @@ Necessary (crypto) algo's for OTR protocol v4:
 | Ed448-Goldilocks                              |               | unknown | no | - | |
 | SMPv2                                         |               | unknown | no | - | |
 | Diffie-Hellman ~128-bit security              |               | unknown | no | - | |
-| XSalsa20                                      |               | unknown | no | - | |
 | ChaCha20 based on RFC 7539 (aka ChaCha20 and Poly1305) | stream cipher | yes | yes, basic implementation | BouncyCastle | |
 | Double Ratchet Algorithm                      |               | unknown | no | - | Key management |
-| MAC Keys                                      |               | unknown | no | - | |
 | SHAKE-256                                     | Hash algo.    | Yes | Yes  | BouncyCastle  | to hash the symmetric key, to make a hash from the public key fingerprint, hash the 'r' from the ECDH algo.  |
 | Base64 Encoding                               | Encoding      | Yes | Yes  | .NET Core | encoding OTRv4 messages |
+||||||
+
+Functions:
+
+| Name | Type | Available | Implemented | Used for | |
+|---|---|---|---|---|---|---|
+| Key Derivation Function (KDF)                 |               | unknown | no | |
+| Hash with Context Function (HCF)              |               | unknown | no | |
+| Hash with Context Message Authentication Code (HCMAC)  |               | unknown | no | |
 ||||||
 
 protocols:
