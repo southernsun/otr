@@ -5,6 +5,7 @@ using System.Text;
 
 namespace AlgoLibrary
 {
+    // https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.ecdiffiehellmancng?view=dotnet-plat-ext-3.1
     public class Alice
     {
         public static byte[] AlicePublicKey;
@@ -27,7 +28,7 @@ namespace AlgoLibrary
 
         private static void Send(byte[] key, string secretMessage, out byte[] encryptedMessage, out byte[] iv)
         {
-            using Aes aes = new AesCryptoServiceProvider();
+            using Aes aes = new AesCryptoServiceProvider(); // bk: NOTE: this needs to switch to ChaCha20?!
             aes.Key = key;
             iv = aes.IV;
 

@@ -53,7 +53,8 @@ https://github.com/southernsun/otr/issues
 
 we will try to use:
 
-+ Unity Container https://github.com/unitycontainer
+Autofac - https://autofac.org/
+~~+ Unity Container https://github.com/unitycontainer~~
 + Automapper - https://automapper.org/
 + Fluent Assertions - https://fluentassertions.com/
 + NUnit - https://nunit.org/
