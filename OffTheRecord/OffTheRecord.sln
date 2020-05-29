@@ -31,7 +31,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoLibrary", "AlgoLibrary\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgoLibrary.Tests", "AlgoLibrary.Tests\AlgoLibrary.Tests.csproj", "{C1D614DF-8CC7-420A-BA21-E266CA2058EF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BFAC52BF-59DE-4C60-8C3E-D14A4A56AB4B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FunctionalTests", "FunctionalTests", "{BFAC52BF-59DE-4C60-8C3E-D14A4A56AB4B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowTests", "SpecFlowTests\SpecFlowTests.csproj", "{A1A1BD6A-F486-44D8-B644-8A3955C17B08}"
 EndProject
