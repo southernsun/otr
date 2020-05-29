@@ -6,7 +6,7 @@ Necessary (crypto) algo's for OTR protocol v4:
 | SMPv2                                         |               | unknown | no | - | |
 | Diffie-Hellman ~128-bit security              |               | unknown | no | - | |
 | ChaCha20 based on RFC 7539 (aka ChaCha20 and Poly1305) | stream cipher | yes | yes, basic implementation | BouncyCastle | |
-| Double Ratchet Algorithm                      |               | unknown | no | - | Key management |
+| Double Ratchet Algorithm                      |               | unknown | no | - | Key management - https://www.youtube.com/watch?v=9sO2qdTci-s |
 | SHAKE-256                                     | Hash algo.    | Yes | Yes  | BouncyCastle  | to hash the symmetric key, to make a hash from the public key fingerprint, hash the 'r' from the ECDH algo.  |
 | Base64 Encoding                               | Encoding      | Yes | Yes  | .NET Core | encoding OTRv4 messages |
 ||||||
