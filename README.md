@@ -4,7 +4,7 @@
 
 [![CircleCI](https://circleci.com/gh/southernsun/otr.svg?style=shield)](https://circleci.com/gh/southernsun/otr) <sub><sup>CircleCI</sup></sub>
 
-[![Coverage Status](https://coveralls.io/repos/github/southernsun/otr/badge.svg?branch=%28no+branch%29)](https://coveralls.io/github/southernsun/otr?branch=%28no+branch%29)
+[![Coverage Status](https://coveralls.io/repos/github/southernsun/otr/badge.svg?branch=%28no+branch%29)](https://coveralls.io/github/southernsun/otr?branch=%28no+branch%29) <sub><sup>Coveralls.io</sup></sub>
 
 # Off the Record in C#
 
