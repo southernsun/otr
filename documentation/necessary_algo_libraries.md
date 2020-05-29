@@ -6,7 +6,7 @@ Necessary (crypto) algo's for OTR protocol v4:
 | SMPv2                                         |               | unknown | no | - | |
 | Diffie-Hellman ~128-bit security              |               | unknown | no | - | |
 | XSalsa20                                      |               | unknown | no | - | |
-| ChaCha20 based on RFC 7539                    |               | unknown | no | - | |
+| ChaCha20 based on RFC 7539 (aka ChaCha20 and Poly1305) | stream cipher | yes | yes, basic implementation | BouncyCastle | |
 | Double Ratchet Algorithm                      |               | unknown | no | - | Key management |
 | Deniable authenticated key exchanges (DAKE)   |               | unknown | no | - | |
 | DAKE with Zero Knowledge (DAKEZ)              |               | unknown | no | - | |
