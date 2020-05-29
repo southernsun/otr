@@ -2,9 +2,10 @@
 
 [![Build Status](https://travis-ci.org/southernsun/otr.svg?branch=master)](https://travis-ci.org/southernsun/otr) <sub><sup>Travis-CI</sup></sub>
 
-[![Coverage Status](https://coveralls.io/repos/github/southernsun/otr/badge.svg?branch=master)](https://coveralls.io/github/southernsun/otr?branch=master) <sub><sup>Coveralls</sup></sub>
-
 [![CircleCI](https://circleci.com/gh/southernsun/otr.svg?style=shield)](https://circleci.com/gh/southernsun/otr) <sub><sup>CircleCI</sup></sub>
+
+currently broken:
+[![Coverage Status](https://coveralls.io/repos/github/southernsun/otr/badge.svg?branch=master)](https://coveralls.io/github/southernsun/otr?branch=master) <sub><sup>Coveralls</sup></sub>
 
 # Off the Record in C#
 
