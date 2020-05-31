@@ -1,5 +1,7 @@
 [![Build Status](https://dev.azure.com/OffTheRecordv4/OTRv4/_apis/build/status/southernsun.otr?branchName=master)](https://dev.azure.com/OffTheRecordv4/OTRv4/_build/latest?definitionId=1&branchName=master) <sub><sup>Azure DevOps</sup></sub>
 
+[![Coverage](https://img.shields.io/azure-devops/coverage/OffTheRecordv4/OTRv4/1) <sub><sup>Azure DevOps code coverage</sup></sub>
+
 [![Build Status](https://travis-ci.org/southernsun/otr.svg?branch=master)](https://travis-ci.org/southernsun/otr) <sub><sup>Travis-CI</sup></sub>
 
 [![CircleCI](https://circleci.com/gh/southernsun/otr.svg?style=shield)](https://circleci.com/gh/southernsun/otr) <sub><sup>CircleCI</sup></sub>
